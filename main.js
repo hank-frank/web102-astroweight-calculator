@@ -14,7 +14,7 @@ var planets = [
   ];
 
 var reverseIt = planets.reverse();  
-//To reverse the order just run arrayInReverse.forEach() instead of planets.forEach, the var arrayInReverse stores the array in reverse order. 
+//To reverse the order just run reverseIt.forEach() instead of planets.forEach, the var arrayInReverse stores the array in reverse order. 
 planets.forEach(function(element) { 
         var newElement = document.getElementById("planets");
         var option = document.createElement("OPTION");
