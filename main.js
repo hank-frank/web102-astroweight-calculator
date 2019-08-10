@@ -1,4 +1,3 @@
-// Write your JavaScript code here!
 var planets = [
     ['Pluto', 0.06],
     ['Neptune', 1.148],
@@ -14,52 +13,31 @@ var planets = [
   ];
 
 var reverseIt = planets.reverse();  
-//To reverse the order just run reverseIt.forEach() instead of planets.forEach, the var arrayInReverse stores the array in reverse order. 
+//To reverse the order just run reverseIt.forEach() instead of planets.forEach, the var arrayInReverse stores the array in reverse order.
+
 planets.forEach(function(element) { 
-        var newElement = document.getElementById("planets");
-        var option = document.createElement("OPTION");
-        var text = document.createTextNode(element[0]);
-        option.appendChild(text);
-       newElement.insertBefore(option,newElement.lastChild);
-// console.log(option); 
+    var newElement = document.getElementById("planets");
+    var option = document.createElement("OPTION");
+    var text = document.createTextNode(element[0]);
+    option.appendChild(text);
+    newElement.insertBefore(option,newElement.lastChild);
     });
 
-    function calculateWeight(weight, planetName) {
-        var userWeight = document.getElementById("user-weight").value;
-        var planetName = document.getElementById("planets").selectedIndex -1;
-        var gravity = planets[planetName][1];
-        return userWeight * gravity;
+  function calculateWeight(weight, planetName) {
+      var userWeight = document.getElementById("user-weight").value;
+      var planetName = document.getElementById("planets").selectedIndex -1;
+      var gravity = planets[planetName][1];
+      return (userWeight * gravity).toFixed(2);
     };
 
   function handleClickEvent(e) {
-    // 3. Create a variable called userWeight and assign the value of the user's weight.   
-        // Vanilla JS: 
-        var userWeight = document.getElementById("user-weight").value; 
-        //JQuery: 
-        //  var userWeight = $("#user-weight").val(); 
-// console.log(userWeight);
-
-    // 4. Create a variable called planetName and assign the name of the selected planet from the drop down.
-        //Vanilla JS:
+    var userWeight = document.getElementById("user-weight").value; 
+      //JQuery: 
+      //  var userWeight = $("#user-weight").val(); 
     var planetName = document.getElementById("planets").value;
-        //JQuery:
-        // var planetName = $("#planets").val();
-// console.log(planetName);
- 
-
-
-// 5. Create a variable called result and assign the value of the new calculated weight.
+      //JQuery:
+      // var planetName = $("#planets").val();
+      // console.log(planetName);
     var result =  calculateWeight(userWeight, planetName);   
-// console.log(result);
-  
-  // 6. Write code to display the message shown in the screenshot.
-  document.getElementById('output').innerHTML = "If you were on " + planetName + ", you would weigh " + result + "lbs!"; 
-}
-  
-  // 7. Set the #calculate-button element's onclick method to use the handleClickEvent function.
-  //DONE in HTML
-
-
-  // Bonus Challenges
-  // 8. Reverse the drop down order so that the sun is first. DONE
-  // 9. Make it look nice using bootstrap (http://getbootstrap.com/getting-started/)
+    document.getElementById('output').innerHTML = "If you were on <span style='color: rgb(231, 64, 64);'>" + planetName + "</span>, you would weigh <span style='color: rgb(231, 64, 64);'>" + result + "lbs</span>!"; 
+};

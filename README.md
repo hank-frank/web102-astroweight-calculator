@@ -1,16 +1,9 @@
-Astro Weight Calculator: 
+This is an Astro Weight Calculator built as a project for the San Diego Code School.
 
-Accept a users weight in a text input field, 
+Project starter files were checked out from the San Diego Code Schools github.
 
-user selects the planet from a drop down menu, 
+To view either open the html file in a browser or run $ npm install followed by $ npm start
 
-what their weight on that planet would be is dysplayed. 
+Starter files from https://www.sdcs.io/ Project completed by Henry Frank
 
-To use: 
-
-Clone repository to your computer, either open the index.html file in the browser of your choice or 
-within your terminal run the $ npm start command, go to the address it hosts at (http://localhost:8080).
-
-Input your weight, select the planet, click calculate and viola!.  
-
-
+It takes your weight and and a planet and tells you what you'd weigh on that planet. 

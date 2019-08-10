@@ -1,29 +1,35 @@
 
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--From Bootstrap guidelines-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Astro Weight Calculator</title>
   </head>
   <body>
-     <label for="user-weight">Enter your Weight:</label>
-     <input id="user-weight" type="text" placeholder="Weight (lbs)" />
-     
-     <label for="planets">Select A Planet</label>
-     <select id ="planets">
-       <option>Select a Planet:</option>
-     </select>
+    <h1 class="main-title">I'm an Astro Weight Calculator!</h1>
+    <div class="flex-container">
+      <label for="user-weight">Enter your Weight:</label>
+      <input id="user-weight" class="every-input" type="text" placeholder="Weight (lbs)" />
+      
+      <label for="planets">Select A Planet</label>
+      <select id="planets" class="every-input">
+        <option>Select a Planet:</option>
+      </select>
+    </div>
 
-     <p id="output"></p>
-     <button id="calculate-button" onclick="handleClickEvent()">Calculate</button>
-     
-<!--From bootstrap guidelines-->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--This allows jQuery to be used-->
-     <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <p id="output"></p>
+    <div class="flex-container">
+      <button id="calculate-button" onclick="handleClickEvent()">Calculate!</button>
+    </div>
+    <!--From bootstrap guidelines-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script type="text/JavaScript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
