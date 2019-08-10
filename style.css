@@ -46,6 +46,7 @@ button {
 button:hover {
     color:white;
     background-color:rgb(231, 64, 64);
+    border:0.1em solid rgb(231, 64, 64);
     }
 
 #output {
